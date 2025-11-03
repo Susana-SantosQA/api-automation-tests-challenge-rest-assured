@@ -49,5 +49,16 @@ buildNumber.properties
 # JDT-specific (Eclipse Java Development Tools)
 .classpath
 
-# End of https://www.topta
-/*.iml
+# IntelliJ IDEA
+*.iml
+*.iws
+*.ipr
+.idea/
+
+# VS Code
+.vscode/
+
+# Mac
+.DS_Store
+
+# End of https://www.toptal.com/developers/gitignore/api/java

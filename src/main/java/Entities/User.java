@@ -8,6 +8,9 @@ public class User {
     private String password;
     private String phone;
 
+    // Construtor vazio para serialização
+    public User() {}
+
     public User(String username, String firstName, String lastName, String email, String password, String phone) {
         this.username = username;
         this.firstName = firstName;
@@ -17,6 +20,7 @@ public class User {
         this.phone = phone;
     }
 
+    // Getters e Setters
     public String getUsername() {
         return username;
     }
@@ -65,4 +69,16 @@ public class User {
         this.phone = phone;
     }
 
+    // Método toString para usar todos os campos e evitar warnings
+    @Override
+    public String toString() {
+        return "User{" +
+                "username='" + username + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", email='" + email + '\'' +
+                ", password='" + password + '\'' +
+                ", phone='" + phone + '\'' +
+                '}';
+    }
 }
